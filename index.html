@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+            html{
+               background-color: black
+            }
+            
+            .openAnimation{
+                transform-style: preserve-3d;
+                transition: transform 500ms ease-in-out;
+                transform: rotatey(180deg);
+                transform-origin: 0;
+            }
+            .closeAnimation{
+                transition: transform 500ms ease-in-out;
+                transform: rotateY(0deg);
+                transform-origin: 0;
+            }
+            
+            .openTurnAnimation{
+                transition: transform 500ms ease-in-out;
+                transform: rotateZ(3deg);
+                //transform-origin: 0;
+            }
+            .closeTurnAnimation{
+                transition: transform 500ms ease-in-out;
+                transform: rotateZ(0deg);
+               // transform-origin: 0;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class= "root">
+            <div class="card">
+                <div class="front">
+                    <div class="front-1">1</div>
+                    <div class="front-2">2</div>
+                </div>
+                <div class="back">hello</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./exes/bundle.js"></script>
+    </body>
+</html>
