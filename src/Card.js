@@ -26,7 +26,7 @@ class Card extends React.Component{
         }
         let cardStyles={
             position: "relative",
-            paddingTop: "5%"
+            paddingTop: "7%"
         }
         
         let clickAnimation=()=>{

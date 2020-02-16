@@ -6,7 +6,7 @@
             html{
                background-color: black
             }
-            
+   
             .openAnimation{
                 transform-style: preserve-3d;
                 transition: transform 500ms ease-in-out;
@@ -19,16 +19,19 @@
                 transform-origin: 0;
             }
             
+            .Card{
+                left: 0;
+            }
             .openTurnAnimation{
-                transition: margin-left 500ms ease-in-out, transform 500ms ease-in-out;
-                margin-left: 70vw;
+                transition: all 500ms ease-in-out;
+                left: 200px;
                 transform: rotateZ(3deg);
                 //transform-origin: 0;
             }
             
             .closeTurnAnimation{
-                transition: margin 500ms ease-in-out, transform 500ms ease-in-out;
-                margin: auto;
+                transition: all 500ms ease-in-out;
+                left: 0;
                 transform:  rotateZ(0deg);
                // transform-origin: 0;
                 
@@ -45,18 +48,17 @@
                 }
             }
                 
-            @media screen and (max-width: 1050px){
+            @media screen and (max-width: 1040px){
                 .dimensions{
                     width: 45vw;
                     height: 50vw;
-                    font-size: .4rem;
+                    font-size: .6rem;
                 }
             }
             
-            
-            @media screen and (min-width: 1051px){
+            @media screen and (min-width: 1050px){
                 .dimensions{
-                    width: 30vw ; 
+                    width: 30vw; 
                     height: 40vw;
                     font-size: .95rem;
                 }
