@@ -17,7 +17,7 @@ class Back extends React.Component{
             paddingTop: "1.5rem"
         }
 
-        return <div className="Back" style={Object.assign({},this.props.styles,cardBodyStyles)}>
+        return <div className="Back dimensions" style={Object.assign({},this.props.styles,cardBodyStyles)}>
                 <div className="content" style={this.props.contentStyles}>
                     I appreciate who you are as an entity a unique conscious autonomous object. Interaction isnt a variable in my appreciation for you and I feel that creates a certain unique depth that I experience personally with you, something not defined my time or interaction. It makes me feel an unspoken timeless connection with you. I appreciate you and that you exist and you and that fact you exist is a beautiful thing. 
 

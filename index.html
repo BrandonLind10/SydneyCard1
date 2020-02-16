@@ -20,16 +20,48 @@
             }
             
             .openTurnAnimation{
-                transition: transform 500ms ease-in-out;
+                transition: margin-left 500ms ease-in-out, transform 500ms ease-in-out;
+                margin-left: 70vw;
                 transform: rotateZ(3deg);
                 //transform-origin: 0;
             }
+            
             .closeTurnAnimation{
-                transition: transform 500ms ease-in-out;
-                transform: rotateZ(0deg);
+                transition: margin 500ms ease-in-out, transform 500ms ease-in-out;
+                margin: auto;
+                transform:  rotateZ(0deg);
                // transform-origin: 0;
+                
             }
         
+            
+            
+            
+            @media screen and (max-width: 800px){
+                .dimensions{
+                    width: 20vw;
+                    height: 30vw;
+                    font-size: .2rem;
+                }
+            }
+                
+            @media screen and (max-width: 1050px){
+                .dimensions{
+                    width: 45vw;
+                    height: 50vw;
+                    font-size: .4rem;
+                }
+            }
+            
+            
+            @media screen and (min-width: 1051px){
+                .dimensions{
+                    width: 30vw ; 
+                    height: 40vw;
+                    font-size: .95rem;
+                }
+            }
+            
         </style>
     </head>
     <body>

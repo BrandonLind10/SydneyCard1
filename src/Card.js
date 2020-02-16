@@ -12,15 +12,12 @@ class Card extends React.Component{
     }
     
     render(){
-        let height="60vh";
+        //let height="60vh";
         
         let commonStyles={
-            width: "40vh",
-            height: height,
             color: "black",
             textAlign: "left",
             margin: "auto",
-            fontSize:".95rem",
             boxSizing: "border-box"
         }
         let contentStyles={
@@ -58,7 +55,7 @@ class Card extends React.Component{
                 });
             }
         }
-        return <div className="Card" onClick={clickAnimation} style={Object.assign({},commonStyles,cardStyles)} >
+        return <div className="Card dimensions" onClick={clickAnimation} style={Object.assign({},commonStyles,cardStyles)} >
                 <Front styles={commonStyles} contentStyles={contentStyles}/>
                 <Back styles={commonStyles} contentStyles={contentStyles}/>
             </div>

@@ -28,9 +28,9 @@ class Front extends React.Component{
                 paddingBottom: "1.5rem"
             }
             
-        return <div className="Front" style={Object.assign({},this.props.styles,coverStyles)}>
-                <div style={Object.assign({},this.props.styles,frontStyles)}>Front</div>
-                <div style={Object.assign({},this.props.styles,backStyles)}>
+        return <div className="Front dimensions" style={Object.assign({},this.props.styles,coverStyles)}>
+                <div className="dimensions" style={Object.assign({},this.props.styles,frontStyles)}>Front</div>
+                <div className="dimensions" style={Object.assign({},this.props.styles,backStyles)}>
                         <div className="content" style={this.props.contentStyles}>
                             
                         <span className="greeting" style={greetingStyles}>Dear Sydney,</span>
