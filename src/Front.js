@@ -19,10 +19,7 @@ class Front extends React.Component{
                 transform: "rotatey(180deg)",
                 backfaceVisibility: "hidden",
                 backgroundColor: "#ffffe6",
-                borderTop: "5px solid red",
-                borderLeft: "5px solid red",
-                borderBottom:"5px solid red",
-                borderRight: "3px solid #ffffe6"
+                border: "5px solid red"
             }
             
 
