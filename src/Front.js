@@ -22,18 +22,14 @@ class Front extends React.Component{
                 border: "5px solid red"
             }
             
-            let greetingStyles={
-                display: "block",
-                paddingTop: "1.5rem",
-                paddingBottom: "1.5rem"
-            }
+
             
         return <div className="Front dimensions" style={Object.assign({},this.props.styles,coverStyles)}>
                 <div className="dimensions" style={Object.assign({},this.props.styles,frontStyles)}>Front</div>
                 <div className="dimensions" style={Object.assign({},this.props.styles,backStyles)}>
                         <div className="content" style={this.props.contentStyles}>
                             
-                        <span className="greeting" style={greetingStyles}>Dear Sydney,</span>
+                        <span className="greeting">Dear Sydney,</span>
                             
                         Happy Valentine’s Day Sydney. 
 

@@ -6,7 +6,8 @@
             html{
                background-color: black
             }
-   
+            
+
             .openAnimation{
                 transform-style: preserve-3d;
                 transition: transform 500ms ease-in-out;
@@ -37,30 +38,42 @@
                 
             }
         
+           
             
-            
-            
-            @media screen and (max-width: 800px){
-                .dimensions{
-                    width: 20vw;
-                    height: 30vw;
-                    font-size: .5rem;
-                }
-            }
+
                 
-            @media screen and (max-width: 1040px){
-                .dimensions{
-                    width: 45vw;
-                    height: 50vw;
-                    font-size: .6rem;
+                .greeting {
+                    display: block;
+                    padding: .5rem 0 .5rem;
                 }
+                
+                .dimensions{
+                    width: 30vw;
+                    height: 40vw;
+                    font-size: 1.05vw;
+                }
+            
+            
+            @media screen and (min-width: 800px){
+                .dimensions{
+                    width: 30vw;
+                    height: 40vw;
+                    font-size: 1.1vw;
+                }
+                
+                .greeting{
+                    display: block;
+                    padding: 1rem 0 1rem;
+                }
+                
             }
             
-            @media screen and (min-width: 1050px){
+             @media screen and (min-width: 1100px){
                 .dimensions{
                     width: 30vw; 
-                    height: 40vw;
-                    font-size: .95rem;
+                    height: 35vw;
+                    font-size: 1.1vw;
+                    
                 }
             }
             

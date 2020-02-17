@@ -12,10 +12,6 @@ class Back extends React.Component{
             zIndex: "-1"
         }
         
-        let signature={
-            display: "block",
-            paddingTop: "1.5rem"
-        }
 
         return <div className="Back dimensions" style={Object.assign({},this.props.styles,cardBodyStyles)}>
                 <div className="content" style={this.props.contentStyles}>
@@ -23,7 +19,7 @@ class Back extends React.Component{
 
                     I feel I will always consider you a close friend and I feel 50 years from now I will be willing listen, to you give you space, to listen to you, be supportive in what way I can and I will still appreciate you. 
 
-                    <span style={signature}>A friend, Brandon</span>
+                    <span className="greeting">A friend, Brandon</span>
                 </div>
             </div>
     }
