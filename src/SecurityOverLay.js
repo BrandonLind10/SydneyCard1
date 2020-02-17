@@ -82,7 +82,7 @@ class SecurityOverLay extends React.Component{
         };
         return <div className="SecurityOverLay" style={styles.overLay}>
                         <div className="userInput" style={styles.userInput}>
-                            <div className="message" style={styles.message}/> {this.state.message} </div>
+                            <div className="message" style={styles.message}> {this.state.message} </div>
                             <label htmlFor="name">Name: </label> 
                             <input className="userName" type="text" name="name"/>
                             <button onClick={this.submit}>Enter</button>
