@@ -8,7 +8,10 @@ class Back extends React.Component{
         let cardBodyStyles={
             //position: "absolute",
             backgroundColor: "#ffffe6",
-            border: "5px solid red",
+            borderTop: "5px solid red",
+            borderRight: "5px solid red",
+            borderBottom: "5px solid red",
+            borderLeft: "3px solid #ffffe6",
             zIndex: "-1"
         }
         
