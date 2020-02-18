@@ -30,12 +30,15 @@ class Front extends React.Component{
                         <div className="content" style={this.props.contentStyles}>
                             
                         <span className="greeting">Dear Sydney,</span>
-                            
-                        Happy Valentine’s Day Sydney. 
-
-                        I think a friend and close friends is a concept that is broad with bunch sub concepts under that friend. What is a friend? What does it mean to value someone? What does it mean to appreciate? I think those are complex things with multiple sub concepts. If a close friend is someone that you deeply appreciate and care about then you are a close friend of mine. 
-
-                        Nothing you particularly do makes me appreciate you as much as who you are that I appreciate. I think everyone as base  self maybe who they are internally, independent of conditioning and genetic programming for lack of better words. People are unique conscious objects that can be appreciated like a painting in a gallery. You don’t particularly interact with a painting much in a conventional sense, the interaction is more abstract, mostly just sheer appreciation.
+                        alejf furgp aubg usflb rfksv dfavkf jvs kdjf hvks djf vshkJ
+                        kejhfvK JWEV FKjsvd kfjvsk djfva ksd vafkjs
+                        KJHEF jhbfkH JSD FKJ AHKD Ksjdf kdhf akjsdv fkashd vfkjvd fkjd
+                        kdjfk jdvfkjf dvfjk avds kfvskd hfvK DHFK SDHF KJDVF KJHDVFK
+                        KJHFKjh fvkJ VFKJHV FKJAV DSKJFVAK SDJFV KJHVF KJHVF JADV KADVA
+                         DFKD FKJVD FKJAVK DJFVA SKDJFV KDHV FKAJDVF KAJSVD FKJHDV KJH KFV
+                          BKDSJHv kds jfvK DGVF JDGVFK gsvkfg cksd jgfa vkjdsvkj vdfk jasvdkjf
+                           KJDFKj dvK JDFV Kjdvhf kJDVF Kjdf kJHDV KFjhdvf kjhdv fkjHD FKJh
+                        
                         </div>
                     </div>
             </div>
@@ -43,3 +46,6 @@ class Front extends React.Component{
 }
 
 module.exports=Front;
+                        
+                        
+                        
