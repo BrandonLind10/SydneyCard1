@@ -25,7 +25,7 @@ class Front extends React.Component{
 
             
         return <div className="Front dimensions" style={Object.assign({},this.props.styles,coverStyles)}>
-                <div className="dimensions" style={Object.assign({},this.props.styles,frontStyles)}><InfinitySign/></div>
+                <div className="dimensions" style={Object.assign({backfaceVisibility: "hidden"},this.props.styles,frontStyles)}><InfinitySign/></div>
                 <div className="dimensions" style={Object.assign({},this.props.styles,backStyles)}>
                         <div className="content" style={this.props.contentStyles}>
                             
