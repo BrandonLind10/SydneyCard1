@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <meta charset="utf-8">
         <style>
             html{
-               background-color: black
+               background-color: #2b2e33
             }
             body{
                 margin:0;
             }
+            .root{
+                width: 100vw;
+                height: 100vh;
+            }
             
+            .lighting{
+                box-Shadow: 1px 1px 500px white;
+            }
 
             .openAnimation{
                 transform-style: preserve-3d;
@@ -30,6 +37,7 @@
             .Card{
                 left: 0;
             }
+
             .openTurnAnimation{
                 transition: all 500ms ease-in-out;
                 left: 200px;
@@ -84,7 +92,6 @@
     </head>
     <body>
         <div class= "root">
-            <div class="overLay"></div>
         </div>
         <script type="text/javascript" src="./exes/bundle.js"></script>
     </body>

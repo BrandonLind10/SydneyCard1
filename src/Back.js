@@ -8,10 +8,9 @@ class Back extends React.Component{
         let cardBodyStyles={
             //position: "absolute",
             backgroundColor: "#ffffe6",
-            border: "5px solid red",
+            border: "5px solid black",
             zIndex: "-1"
         }
-        
 
         return <div className="Back dimensions" style={Object.assign({},this.props.styles,cardBodyStyles)}>
                 <div className="content" style={this.props.contentStyles}>

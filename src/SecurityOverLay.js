@@ -7,24 +7,34 @@ class SecurityOverLay extends React.Component{
     constructor(props){
         super(props);
         this.submit= this.submit.bind(this);
+        this.nameHandler= this.nameHandler.bind(this);
         this.state={
             message: "Happy valentines, enter your first name to receive card",
-            givenName: null
+            givenName: ""
         }
+    }
+    
+    nameHandler(){
+        
+        let name= document.getElementsByClassName("userName")[0].value;
+        
+        this.setState({
+            givenName: name
+        });
+        
+        console.log(this.state);
     }
     
     isNameCorrect(){
         let correctName= "sydney";
-        if(this.state.givenName.toLowerCase() === correctName){
-            return true
-        }
-        else {
-            return false;
-        }
+        let givenName= this.state.givenName.toLowerCase();
+        givenName= givenName.trim();
+        
+        return (givenName === correctName)? true : false;
     }
     
     remove(){
-            let el= document.getElementsByClassName("overLay")[0];
+            let el= document.getElementsByClassName("root")[0];
             ReactDOM.unmountComponentAtNode(el);
     }
     
@@ -34,12 +44,10 @@ class SecurityOverLay extends React.Component{
     }
     
     submit(){
-        this.setState({
-            givenName: document.getElementsByClassName("userName")[0].value
-        });
+        
         if(this.isNameCorrect()){
-            this.showCard();
-            this.remove();
+             this.remove();
+             this.showCard();
         }
         
         else{
@@ -58,9 +66,7 @@ class SecurityOverLay extends React.Component{
         let styles={
                 overLay:{
                 boxSizing: "border-box",
-                width: "100vw",
-                height: "100vh",
-                backgroundColor: "red",
+                backgroundColor: "#2b2e33",
                 color: "white"
             },
             userInput:{
@@ -78,14 +84,23 @@ class SecurityOverLay extends React.Component{
                 paddingBottom: "10vh",
                 fontSize: "4vh",
                 fontFamily: "arial"
+            },
+            button:{
+                marginLeft: "2%",
+                borderRadius: "8%"
+            },
+            label:{
+                marginRight: "2%"
             }
         };
         return <div className="SecurityOverLay" style={styles.overLay}>
                         <div className="userInput" style={styles.userInput}>
-                            <div className="message" style={styles.message}> {this.state.message} </div>
-                            <label htmlFor="name">Name: </label> 
-                            <input className="userName" type="text" name="name"/>
-                            <button onClick={this.submit}>Enter</button>
+                            <div className="message" style={styles.message}>{this.state.message} </div>
+                            <form>
+                                <label style={styles.label} htmlFor="name">Name: </label> 
+                                <input className="userName" type="text" name="name" onChange={this.nameHandler}/>
+                                <input type="submit" style={styles.button} onClick={this.submit} value="Enter"/>
+                            </form>
                         </div>
                     </div>
                 
@@ -96,4 +111,4 @@ class SecurityOverLay extends React.Component{
 
 
 
-module.exports=SecurityOverLay
+module.exports=SecurityOverLay;

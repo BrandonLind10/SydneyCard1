@@ -1,5 +1,5 @@
 let React= require("react");
-
+let InfinitySign= require("./InfinitySign.js");
 
 class Front extends React.Component{
     
@@ -12,20 +12,20 @@ class Front extends React.Component{
             }
             let frontStyles={
                 position: "absolute",
-                backgroundColor: "red"
+                backgroundColor: "black"
             }
             let backStyles={
                 position: "aboslute",
                 transform: "rotatey(180deg)",
                 backfaceVisibility: "hidden",
                 backgroundColor: "#ffffe6",
-                border: "5px solid red"
+                border: "5px solid black"
             }
             
 
             
         return <div className="Front dimensions" style={Object.assign({},this.props.styles,coverStyles)}>
-                <div className="dimensions" style={Object.assign({},this.props.styles,frontStyles)}>Front</div>
+                <div className="dimensions" style={Object.assign({},this.props.styles,frontStyles)}><InfinitySign/></div>
                 <div className="dimensions" style={Object.assign({},this.props.styles,backStyles)}>
                         <div className="content" style={this.props.contentStyles}>
                             

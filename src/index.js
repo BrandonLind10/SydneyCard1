@@ -4,8 +4,9 @@ let SecurityOverLay= require("./SecurityOverLay.js");
 let root= document.getElementsByClassName("root")[0];
 let overLay= document.getElementsByClassName("overLay")[0];
 
+
 ReactDOM.render(
     <SecurityOverLay/>,
-    overLay
+    root
 );
 

@@ -26,7 +26,7 @@ class Card extends React.Component{
         }
         let cardStyles={
             position: "relative",
-            paddingTop: "6%"
+            marginTop: "15vh"
         }
         
         let clickAnimation=()=>{
@@ -55,10 +55,15 @@ class Card extends React.Component{
                 });
             }
         }
-        return <div className="Card dimensions" onClick={clickAnimation} style={Object.assign({},commonStyles,cardStyles)} >
+        return <>
+                <div className="Card dimensions" onClick={clickAnimation} style={Object.assign({},commonStyles,cardStyles)} >
                 <Front styles={commonStyles} contentStyles={contentStyles}/>
                 <Back styles={commonStyles} contentStyles={contentStyles}/>
-            </div>
+                </div>
+                <div class="lighting ">
+            
+                </div>
+            </>
     }
 }
 
