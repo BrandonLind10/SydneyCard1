@@ -76,6 +76,14 @@ class SecurityOverLay extends React.Component{
                 textAlign: "center",
                 fontFamily: "arial"
             },
+            userControls: {
+                //fontSize: "4.6vh",
+                //height: "5vh"
+            },
+            userName:{
+               // height: "5vh",
+               // width: "30vw"
+            },
             errorMessage: {
                 visibility: "hidden",
                 color: "red"
@@ -97,9 +105,9 @@ class SecurityOverLay extends React.Component{
                         <div className="userInput" style={styles.userInput}>
                             <div className="message" style={styles.message}>{this.state.message} </div>
                             <form>
-                                <label style={styles.label} htmlFor="name">Name: </label> 
-                                <input className="userName" type="text" name="name" onChange={this.nameHandler}/>
-                                <input type="submit" style={styles.button} onClick={this.submit} value="Enter"/>
+                                <label style={Object.assign({},styles.label,styles.userControls)} htmlFor="name">Name: </label> 
+                                <input style={Object.assign({},styles.userName,styles.userControls)}className="userName" type="text" name="name" onChange={this.nameHandler}/>
+                                <input type="submit" style={Object.assign({},styles.button,styles.userControls)} onClick={this.submit} value="Enter"/>
                             </form>
                         </div>
                     </div>
