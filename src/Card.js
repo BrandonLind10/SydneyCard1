@@ -11,6 +11,13 @@ class Card extends React.Component{
         }
     }
     
+    componentDidMount(){
+        setTimeout(()=>{
+            let card= document.getElementsByClassName("Card")[0];
+            card.classList.add("slideIn");
+        },
+        20);
+    }
     render(){
         //let height="60vh";
         
@@ -55,15 +62,10 @@ class Card extends React.Component{
                 });
             }
         }
-        return <>
-                <div className="Card dimensions" onClick={clickAnimation} style={Object.assign({},commonStyles,cardStyles)} >
+            return <div className="Card dimensions" onClick={clickAnimation} style={Object.assign({},commonStyles,cardStyles)} >
                 <Front styles={commonStyles} contentStyles={contentStyles}/>
                 <Back styles={commonStyles} contentStyles={contentStyles}/>
-                </div>
-                <div class="lighting ">
-            
-                </div>
-            </>
+            </div>
     }
 }
 
