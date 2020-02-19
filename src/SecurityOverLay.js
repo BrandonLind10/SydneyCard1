@@ -89,7 +89,7 @@ class SecurityOverLay extends React.Component{
             },
             message:{
                 paddingBottom: "10vh",
-                fontSize: "4vh",
+                fontSize: "3vw",
                 fontFamily: "arial"
             },
             button:{
