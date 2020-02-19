@@ -1,7 +1,7 @@
 let React= require("react");
 let Front= require("./Front.js");
 let Back= require("./Back.js");
-let root= document.getElementsByClassName("root")[0];
+let html= document.getElementsByTagName("html")[0];
 class Card extends React.Component{
     constructor(props){
         super(props);
@@ -15,6 +15,7 @@ class Card extends React.Component{
         setTimeout(()=>{
             let card= document.getElementsByClassName("Card")[0];
             card.classList.add("slideIn");
+            html.classList.add("lighting");
         },
         20);
     }
