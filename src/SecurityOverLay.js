@@ -14,8 +14,8 @@ class SecurityOverLay extends React.Component{
         }
     }
     
-    nameHandler(){
-        
+    nameHandler(e){
+        e.preventDefault();
         let name= document.getElementsByClassName("userName")[0].value;
         
         this.setState({
@@ -43,8 +43,7 @@ class SecurityOverLay extends React.Component{
         ReactDOM.render(<Card/>, root);
     }
     
-    submit(e){
-        e.preventDefault();
+    submit(){
         if(this.isNameCorrect()){
              this.remove();
              this.showCard();
