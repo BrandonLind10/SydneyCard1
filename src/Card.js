@@ -33,7 +33,7 @@ class Card extends React.Component{
         }
         let cardStyles={
             position: "relative",
-            marginTop: "15vh"
+           // marginTop: "15vh"
         }
         
         let clickAnimation=()=>{
