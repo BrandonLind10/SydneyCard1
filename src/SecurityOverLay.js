@@ -43,8 +43,8 @@ class SecurityOverLay extends React.Component{
         ReactDOM.render(<Card/>, root);
     }
     
-    submit(){
-        
+    submit(e){
+        e.preventDefault();
         if(this.isNameCorrect()){
              this.remove();
              this.showCard();
