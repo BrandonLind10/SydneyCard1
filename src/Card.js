@@ -1,7 +1,7 @@
 let React= require("react");
 let Front= require("./Front.js");
 let Back= require("./Back.js");
-
+let root= document.getElementsByClassName("root")[0];
 class Card extends React.Component{
     constructor(props){
         super(props);

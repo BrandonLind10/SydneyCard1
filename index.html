@@ -5,23 +5,19 @@
         <style>
             html{
                 background-color: #2b2e33;
+                background-image: radial-gradient(circle at center, white -70%, #2b2e33 50%, #2b2e33 50%);
+                background-repeat: no-repeat;
                 overflow: hidden;
+                height: 100vh;
             }
             body{
                 margin:0;
             }
             .root{
-                width: 80vw;
-                height: 80vh;
                 margin: auto;
             }
-            
-            .lighting{
-                box-Shadow: 500px 500px 300px white;
-                width: 1px;
-                height: 1px;
-            }
 
+            
             .openAnimation{
                 transform-style: preserve-3d;
                 transition: transform 500ms ease-in-out;
@@ -109,8 +105,8 @@
         </style>
     </head>
     <body>
-        <div class="lighting"></div>
         <div class= "root">
+            
         </div>
         <script type="text/javascript" src="./exes/bundle.js"></script>
     </body>
