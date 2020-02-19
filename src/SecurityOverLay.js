@@ -69,9 +69,9 @@ class SecurityOverLay extends React.Component{
                 color: "white"
             },
             userInput:{
-                width: "500px",
+                width: "50vw",
                 margin: "auto",
-                paddingTop: "35vh",
+                paddingTop: "30vh",
                 textAlign: "center",
                 fontFamily: "arial"
             },
