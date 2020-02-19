@@ -89,8 +89,9 @@ class SecurityOverLay extends React.Component{
             },
             message:{
                 paddingBottom: "10vh",
-                fontSize: "2rem",
-                fontFamily: "arial"
+                fontSize: "1vw",
+                fontFamily: "arial",
+                margin: "auto"
             },
             button:{
                 marginLeft: "2%",
